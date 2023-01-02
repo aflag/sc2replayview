@@ -11,7 +11,7 @@ cache = {}
 
 # Create the main window
 window = tk.Tk()
-window.title("Item List")
+window.title("SC2ReplayView")
 
 # Set the size of the window
 window.geometry('1024x768')
