@@ -1,2 +1,3 @@
 sc2reader
 pyinstaller
+Pillow

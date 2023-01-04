@@ -1,17 +1,22 @@
 import tkinter as tk
 import os
 from datetime import datetime as dt
+import pkg_resources
 
+from PIL import Image, ImageDraw, ImageTk
 import sc2reader
 
 CACHE_FILE = "_sc2replayviewcache"
 
-
 cache = {}
+
+img = Image.open(pkg_resources.resource_filename(__name__, "rplayicon.ico"))
 
 # Create the main window
 window = tk.Tk()
 window.title("SC2ReplayView")
+icon = ImageTk.PhotoImage(img)
+window.iconphoto(True, icon)
 
 # Set the size of the window
 window.geometry('1024x768')
